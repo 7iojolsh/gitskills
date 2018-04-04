@@ -5,7 +5,7 @@
         android:viewportHeight="72.0">
     <path
         android:name="logo"
-        android:strokeColor="@color/logoColor"
+        android:strokeColor="@color/logocolor"
         android:strokeWidth="10"
         android:pathData="M5,10,V50,L20,50,A1,1,0,0,0,20,15,L0,15"/>
 </vector>

@@ -1,12 +1,15 @@
 package yyl.diyapp.com.mytexi.splash;
 
+import android.content.Intent;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import yyl.diyapp.com.mytexi.R;
+import yyl.diyapp.com.mytexi.main.MainActivity;
 
 /**
  * Created by lsh on 2018/3/30.
@@ -23,7 +26,13 @@ public class SplashActivity extends AppCompatActivity {
             final ImageView logo = (ImageView) findViewById(R.id.logo);
             logo.setImageDrawable(anim);
             anim.start();
-
         }
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+              startActivity(new Intent(SplashActivity.this , MainActivity.class));
+            }
+        } ,3000) ;
     }
 }

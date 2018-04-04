@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import yyl.diyapp.com.mytexi.common.http.IRequest;
+import yyl.diyapp.com.mytexi.common.http.api.API;
 
 /**
  * Created by lsh on 2018/4/2.
@@ -25,8 +26,8 @@ public class BaseRequest implements IRequest{
         this.url = url;
         header = new HashMap<>();
         body = new HashMap<>();
-        header.put("Application-Id" , "myTaxiID") ;
-        header.put("API-Key" , "myTaxiKey") ;
+        header.put("X-Bmob-Application-Id", API.Config.getAppId());
+        header.put("X-Bmob-REST-API-Key", API.Config.getAppKey());
     }
 
     @Override
