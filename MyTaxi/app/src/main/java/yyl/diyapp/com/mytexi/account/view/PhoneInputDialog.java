@@ -48,6 +48,12 @@ public class PhoneInputDialog extends Dialog {
         //设置为不可编辑
         mButton.setEnabled(false);
         mPhone = findViewById(R.id.phone);
+        findViewById(R.id.close).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dismiss();
+            }
+        });
         //监听输入手机号码 是否合法
         mPhone.addTextChangedListener(new TextWatcher() {
             @Override
