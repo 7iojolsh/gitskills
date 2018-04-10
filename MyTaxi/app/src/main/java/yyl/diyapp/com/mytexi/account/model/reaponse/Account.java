@@ -1,4 +1,4 @@
-package yyl.diyapp.com.mytexi.account.reaponse;
+package yyl.diyapp.com.mytexi.account.model.reaponse;
 
 /**
  * Created by lsh on 2018/4/4.

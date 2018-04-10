@@ -1,4 +1,4 @@
-package yyl.diyapp.com.mytexi.account;
+package yyl.diyapp.com.mytexi.account.view;
 
 import android.app.Dialog;
 import android.content.Context;

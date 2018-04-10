@@ -59,15 +59,18 @@
             android:textSize="@dimen/text_size_small" />
 
         <com.dalimao.corelibrary.VerificationCodeInput
-            android:id="@+id/verificationCodeInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:layout_gravity="center_horizontal"
             ver:box="4"
-            ver:box_bg_focus="@drawable/verification_edit_bg_focus"
             ver:box_bg_normal="@drawable/verification_edit_bg_normal"
-            ver:inputType="number"  />
+            ver:box_bg_focus="@drawable/verification_edit_bg_focus"
+            ver:child_h_padding="5dp"
+            ver:inputType="number"
+            ver:child_width="40dp"
+            ver:child_height="40dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/verificationCodeInput"/>
 
         <ProgressBar
             android:id="@+id/loading"

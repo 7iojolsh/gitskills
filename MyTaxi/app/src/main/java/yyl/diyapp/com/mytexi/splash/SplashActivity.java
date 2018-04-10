@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
 import yyl.diyapp.com.mytexi.R;
-import yyl.diyapp.com.mytexi.main.MainActivity;
+import yyl.diyapp.com.mytexi.main.view.MainActivity;
 
 /**
  * Created by lsh on 2018/3/30.

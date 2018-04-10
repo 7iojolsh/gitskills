@@ -5,12 +5,12 @@ package yyl.diyapp.com.mytexi.common.http.biz;
  * 返回业务的公共格式
  */
 
-public class BaseBizResporse {
+public class BaseBizResponse {
     public static final int STATE_OK = 200 ;
     //用户已经存在
-    public static final int STATE_USER_EXIST  = 100003;
+    public static  int STATE_USER_EXIST  = 100003;
     //用户不存在
-    public static final int STATE_USER_NOT_EXIST = 100002;
+    public static  int STATE_USER_NOT_EXIST = 100002;
     //密码错误
     public static final int STATE_PWD_ERR = 100005;
     //token 过期
